@@ -38,15 +38,15 @@ public class SistemaDeVendas {
 
             switch (opcao) {
             case 1:
-                System.out.print("\nOpção Novo Cadastro Selecionado");
+                System.out.print("\nOpção Novo Cadastro Selecionado \n");
                 break;
 
             case 2:
-                System.out.print("\nOpção Clientes Selecionado\n");
+                System.out.print("\nOpção Clientes Selecionado \n");
                 break;
 
             case 3:
-                System.out.print("\nOpção Produtos Selecionado\n");
+                System.out.print("\nOpção Produtos Selecionado \n");
                 break;
 
             default:
