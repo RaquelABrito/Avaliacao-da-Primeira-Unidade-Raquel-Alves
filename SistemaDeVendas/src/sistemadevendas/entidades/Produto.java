@@ -10,5 +10,7 @@ package sistemadevendas.entidades;
  * @author Concursos
  */
 public class Produto {
-    
+    private int codigo;
+    private String nome;
+    private float precoUnitario;
 }

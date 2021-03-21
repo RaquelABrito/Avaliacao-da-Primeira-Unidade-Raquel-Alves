@@ -10,5 +10,7 @@ package sistemadevendas.entidades;
  * @author Concursos
  */
 public class Vendedor {
-    
+    private String nome;
+    private String cpnj;
+    private float saldoConta;
 }

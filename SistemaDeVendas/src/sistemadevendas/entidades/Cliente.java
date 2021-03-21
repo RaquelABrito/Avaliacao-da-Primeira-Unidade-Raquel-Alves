@@ -10,5 +10,12 @@ package sistemadevendas.entidades;
  * @author Concursos
  */
 public class Cliente {
+    private String cfp;
+    private String nome;
+    private float saldo;
+    private float valoresPagar;
+   // private String comprasRealizadas;
+    
+    
     
 }
