@@ -20,7 +20,7 @@ public class SistemaDeVendas {
 
             while (true) {            
 
-            System.out.print("##--Teste Estrutura de Menu--##\n\n");
+            System.out.print("##Menu--##\n\n");
             System.out.print("|-----------------------------|\n");
             System.out.print("| Opção 1 - Novo Cadastro     |\n");
             System.out.print("| Opção 2 - Clientes          |\n");
