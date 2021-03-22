@@ -23,6 +23,10 @@ public class CompraVenda {
     private List<Produto> produtos;
 
    
+    public void CompraVenda(){
+        
+    }
+    
     public int getCodigo() {
         return codigo;
     }
