@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package sistemadevendas.entidades;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -18,13 +19,13 @@ public class CompraVenda {
     private int codigo;
     private Vendedor vendedor;
     private Cliente cliente;
-    private Date dataCompra;
+    private LocalDate dataCompra;
     private Double valorTotal;
     private List<Produto> produtos;
 
    
-    public void CompraVenda(){
-        
+    public void CompraVenda(LocalDate date){
+         this.dataCompra = LocalDate.now();
     }
     
     public int getCodigo() {
