@@ -70,14 +70,14 @@ public class CompraVenda {
     /**
      * @return the dataCompra
      */
-    public Date getDataCompra() {
+    public LocalDate getDataCompra() {
         return dataCompra;
     }
 
     /**
      * @param dataCompra the dataCompra to set
      */
-    public void setDataCompra(Date dataCompra) {
+    public void setDataCompra(LocalDate dataCompra) {
         this.dataCompra = dataCompra;
     }
 

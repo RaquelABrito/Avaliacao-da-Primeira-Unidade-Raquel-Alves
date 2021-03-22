@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package sistemadevendas.entidades;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -16,15 +17,15 @@ public class Cliente {
     private String nome;
     private float saldo;
     private float valoresPagar;
-    private List<Produto> produtos;
+    private List<Produto> produtoss;
+    //private List<Cliente> clientes ;
    // private String comprasRealizadas;
-
-    public Cliente(String id, String n, float s, float vP){
-        this.cpf = id;
-        this.nome = n;
-        this.saldo = 0.0f;
-        this.valoresPagar = vP;
+   
+    
+    public Cliente(){   
     }
+
+   List<Cliente> clientes = new ArrayList<>();
     
     public String getCpf() {
         return this.cpf;
@@ -63,7 +64,15 @@ public class Cliente {
     public void setValoresPagar(float valoresPagar) {
         this.valoresPagar = valoresPagar;
     }
-   
+  
+
+    public void adicionar(Cliente c) {
+       clientes.add(c);
+    }
+    
+    public void listar() {
+       System.out.println(clientes);
+    }
     /**
      *
      * @param obj
