@@ -71,7 +71,13 @@ public class Cliente {
     }
     
     public void listar() {
-       System.out.println(clientes.get(1).getNome());
+        for (Cliente c : clientes){
+        System.out.println("__________________________________");
+        System.out.println("Nome: "+c.getNome());
+        System.out.println("Cpf"+c.getCpf());
+        System.out.println("Saldo em conta"+c.getSaldo());
+        System.out.println("__________________________________");
+        }
     }
     /**
      *

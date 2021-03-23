@@ -4,11 +4,12 @@
  * and open the template in the editor.
  */
 package sistemadevendas.entidades;
-
+import sistemadevendas.entidades.Pagamento;
 /**
  *
  * @author Concursos
  */
 public class PagDebito extends Pagamento{
-    
+    int numero;
+    int crc;
 }

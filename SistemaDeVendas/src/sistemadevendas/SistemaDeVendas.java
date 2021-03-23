@@ -58,6 +58,7 @@ public class SistemaDeVendas {
                 System.out.println("Saldo em conta : ");
                 float saldo = dados.nextFloat();
                 c1.setNome(nome);
+              
                 System.out.println("Valores a pagar : ");
                 float valoresPagar = dados.nextFloat();
                 c1.setNome(nome);
@@ -66,13 +67,13 @@ public class SistemaDeVendas {
                 break;
 
             case 2:
-                System.out.print("\nOpção Clientes Selecionado \n");
+                System.out.print("\nOpção Listar Clientes Selecionada \n");
                 c1.listar();
                 break;
 
             case 5:
                 System.out.print("\nOpção Cadastro de funcionarios selecionada\n");
-                System.out.print("\nOpção Novo Cadastro de Cliente Selecionado \n");
+           
                 System.out.println("Cpnj : ");
                 String cpnj = dados.nextLine();
                 v1.setCpnj(cpnj);
@@ -82,9 +83,15 @@ public class SistemaDeVendas {
                 System.out.println("Saldo inicial em conta : ");
                 saldo = dados.nextFloat();
                 v1.setSaldoConta(saldo);
-                
-                
+                v1.adicionar(v1);
                 break;
+              
+            case 6:
+                System.out.print("\nOpção Listar Funcionarios Selecionada \n");
+                v1.listar();
+                break;  
+                
+           
 
             default:
                 System.out.print("\nOpção Inválida!");

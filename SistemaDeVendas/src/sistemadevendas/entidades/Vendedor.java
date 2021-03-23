@@ -5,6 +5,7 @@
  */
 package sistemadevendas.entidades;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -18,6 +19,7 @@ public class Vendedor {
     private String cpnj;
     private float saldoConta;
     private List<Produto> catalogo;
+    List<Vendedor> listaVendedores = new ArrayList<>();
     
     public String getNome() {
         return this.nome;
@@ -48,4 +50,17 @@ public class Vendedor {
         this.saldoConta = saldoConta;
     }
     
+     public void adicionar(Vendedor v) {
+       listaVendedores.add(v);
+    }
+    
+    public void listar() {
+        for (Vendedor v : listaVendedores){
+        System.out.println("__________________________________");
+        System.out.println("Nome: "+v.getNome());
+        System.out.println("Cpf"+v.getCpnj());
+        System.out.println("Saldo em conta"+v.getSaldoConta());
+        System.out.println("__________________________________");
+        }
+    }
 }
