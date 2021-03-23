@@ -5,6 +5,10 @@
  */
 package sistemadevendas.entidades;
 
+import java.util.List;
+
+
+
 /**
  *
  * @author Concursos
@@ -13,7 +17,7 @@ public class Vendedor {
     private String nome;
     private String cpnj;
     private float saldoConta;
-
+    private List<Produto> catalogo;
     
     public String getNome() {
         return this.nome;

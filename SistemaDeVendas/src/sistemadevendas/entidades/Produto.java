@@ -13,7 +13,7 @@ public class Produto {
     private int codigo;
     private String nome;
     private float precoUnitario;
-     private int quantidadeEstoque;
+    private int quantidadeEstoque;
    
     
     public int getCodigo() {

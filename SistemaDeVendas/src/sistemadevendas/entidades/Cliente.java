@@ -71,7 +71,7 @@ public class Cliente {
     }
     
     public void listar() {
-       System.out.println(clientes);
+       System.out.println(clientes.get(1).getNome());
     }
     /**
      *

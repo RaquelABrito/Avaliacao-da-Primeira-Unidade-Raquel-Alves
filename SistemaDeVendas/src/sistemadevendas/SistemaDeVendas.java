@@ -6,6 +6,7 @@
 package sistemadevendas;
 import java.util.Scanner;
 import sistemadevendas.entidades.Cliente;
+import sistemadevendas.entidades.Vendedor;
 /**
  *
  * @author Raquel
@@ -16,7 +17,7 @@ public class SistemaDeVendas {
      * @param args the command line arguments
      */
      public static void main(String[] args) {
-            
+            Vendedor v1 = new Vendedor();
             Cliente c1 = new Cliente();
             Scanner menu = new Scanner (System.in);
             Scanner dados = new Scanner (System.in);
@@ -48,16 +49,16 @@ public class SistemaDeVendas {
             switch (opcao) {
             case 1:
                 System.out.print("\nOpção Novo Cadastro de Cliente Selecionado \n");
-                System.out.println("Nome : ");
+                System.out.println("Cpf : ");
                 String cpf = dados.nextLine();
                 c1.setNome(cpf);
                 System.out.println("Nome : ");
                 String nome = dados.nextLine();
                 c1.setNome(nome);
-                System.out.println("Nome : ");
+                System.out.println("Saldo em conta : ");
                 float saldo = dados.nextFloat();
                 c1.setNome(nome);
-                System.out.println("Nome : ");
+                System.out.println("Valores a pagar : ");
                 float valoresPagar = dados.nextFloat();
                 c1.setNome(nome);
                 
@@ -69,8 +70,20 @@ public class SistemaDeVendas {
                 c1.listar();
                 break;
 
-            case 3:
-                System.out.print("\nOpção Produtos Selecionado \n");
+            case 5:
+                System.out.print("\nOpção Cadastro de funcionarios selecionada\n");
+                System.out.print("\nOpção Novo Cadastro de Cliente Selecionado \n");
+                System.out.println("Cpnj : ");
+                String cpnj = dados.nextLine();
+                v1.setCpnj(cpnj);
+                System.out.println("Nome : ");
+                nome = dados.nextLine();
+                v1.setNome(nome);
+                System.out.println("Saldo inicial em conta : ");
+                saldo = dados.nextFloat();
+                v1.setSaldoConta(saldo);
+                
+                
                 break;
 
             default:
