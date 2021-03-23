@@ -58,8 +58,8 @@ public class Vendedor {
         for (Vendedor v : listaVendedores){
         System.out.println("__________________________________");
         System.out.println("Nome: "+v.getNome());
-        System.out.println("Cpf"+v.getCpnj());
-        System.out.println("Saldo em conta"+v.getSaldoConta());
+        System.out.println("Cpnj: "+v.getCpnj());
+        System.out.println("Saldo em conta: "+v.getSaldoConta());
         System.out.println("__________________________________");
         }
     }

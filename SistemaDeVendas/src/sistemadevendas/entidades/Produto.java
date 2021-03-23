@@ -5,6 +5,9 @@
  */
 package sistemadevendas.entidades;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Concursos
@@ -14,6 +17,7 @@ public class Produto {
     private String nome;
     private float precoUnitario;
     private int quantidadeEstoque;
+    List<Produto> listaProdutos = new ArrayList<>();
    
     
     public int getCodigo() {
