@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemadevendas;
+package sistemadevendas.main;
 import java.util.Scanner;
 import sistemadevendas.entidades.Cliente;
 import sistemadevendas.entidades.Vendedor;
@@ -11,7 +11,7 @@ import sistemadevendas.entidades.Vendedor;
  *
  * @author Raquel
  */
-public class SistemaDeVendas {
+public class main {
 
     /**
      * @param args the command line arguments
